@@ -1,0 +1,23 @@
+accelerator:
+  displayName: Go Test Accelerator
+  description: Go Test
+  tags:
+  - beta
+
+  options:
+  - name: projectName
+    label: GoTest input
+    description: Accelerator generated script archive name 
+    display: true
+    inputType: text
+    defaultValue: gotest
+
+
+engine: 
+  #! let:
+  #! - name: domains 
+  #!   expression: "'-d ''' + domainsToRegister'''"
+
+  chain:
+  - merge:
+    - include: ['**']
